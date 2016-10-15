@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.ios.css" />
+  <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.ios.colors.css" />
+  <!-- endbower -->
+  <link rel="stylesheet" type="text/css" href="assets/styles/my-app.css">
+	<title>myApp</title>
+</head>
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- 左边侧栏-->
+    <div class="panel panel-right panel-cover">
+      <div class="user">
+        <div class="user_top">
+          <div class="myrow"><a href="#" class="close-panel"><img src="assets/img/close_panel.png"></a></div>
+          <div class="myrow">
+            <a href="user_info.html" class="close-panel user_info">
+              <img src="assets/img/headimg.png">
+            </a>
+            <div class="myrow">
+              <p>姓名/职位</p>
+              <p>公司
+                <a href="validation.html" class="verify close-panel">验证</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="myrow borderbottom">
+          <a href="issue_brand.html" class="user_link2 close-panel">
+            <img src="assets/img/user_icon01.png">
+            发布
+          </a>
+          <a href="" class="user_link2 close-panel">
+            <img src="assets/img/user_icon02.png">
+            状态
+          </a>
+          <a href="message.html" class="user_link2 close-panel">
+            <img src="assets/img/user_icon03.png">
+            消息
+          </a>
+          <a href="friend.html" class="user_link2 close-panel">
+            <img src="assets/img/user_icon04.png">
+            人脉
+          </a>
+        </div>
+        <div class="myrow borderbottom">
+          <a href="project.html" class="user_link2 close-panel">
+            <img src="assets/img/user_icon05.png">
+            项目/品牌
+          </a>
+          <a href="password.html" class="user_link2 close-panel">
+            <img src="assets/img/user_icon06.png">
+            刷新
+          </a>
+          <a href="issue_project.html" class="user_link2 close-panel">
+            <img src="assets/img/user_icon07.png">
+            进展
+          </a>
+          <a href="collection.html" class="user_link2 close-panel">
+            <img src="assets/img/user_icon08.png">
+            收藏
+          </a>
+        </div>
+        <div class="myrow borderbottom">
+          <a href="privacy_settings.html" class="user_link close-panel">
+            <img src="assets/img/user_icon09.png">
+            设置
+          </a>
+          <a href="job_subscribe.html" class="user_link close-panel">
+            <img src="assets/img/user_icon03.png">
+            管理
+          </a>
+          <a href="" class="user_link close-panel">
+            <img src="assets/img/user_icon09.png">
+            反馈
+          </a>
+        </div>
+        <a href="" class="loginout"><img src="assets/img/loginout.png">退出</a>
+      </div>
+    </div><!-- 左边侧栏-->
+
+    <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+            <div class="center sliding">Awesome App</div>
+            <div class="right">
+              <!-- 
+                Right link contains only icon - additional "icon-only" class
+                Additional "open-panel" class tells app to open panel when we click on this link
+              -->
+              <a href="#" class="link icon-only open-panel"><i class="icon icon-bars-blue"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content -->
+            <div class="page-content">
+              <p>Page content goes here</p>
+              <!-- Link to another page -->
+              <a href="about.html">About app</a>
+              <br/>
+              <a href="views/test.html">Test app</a>
+              <br/>
+              <a href="#tab-5" data-page="test2.html" class="tab-link tool_link">Test2 app</a>
+              <br/>
+              <a href="#tab-5" data-page="test3.html" class="tab-link tool_link">Test3 app</a>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <a href="#tab-1" data-page="account_charts.html" class="tab-link active icon01"><i
+                    class="icon navbar_icon icon-tab"></i><span class="tabbar-label">发现</span></a>
+            <a href="#tab-2" data-page="project.html" class="tab-link icon02"><i
+                    class="icon icon-tab"></i><span class="tabbar-label">项目</span></a>
+            <a href="#tab-3" data-page="mortgage_index.html" class="tab-link icon03"><i
+                    class="icon icon-tab"></i><span class="tabbar-label">品牌</span></a>
+            <a href="#tab-4" data-page="settings.html" class="tab-link icon04"><i
+                    class="icon icon-tab"></i><span class="tabbar-label">消息</span></a>
+            <a href="#tab-5" data-page="settings.html" class="tab-link icon05"><i
+                    class="icon icon-tab"></i><span class="tabbar-label">人脉</span></a>
+            <a href="#tab-6" data-page="settings.html" class="tab-link icon06"><i
+                    class="icon icon-tab"></i><span class="tabbar-label">我</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--项目更多按钮弹出层-->
+    <!-- div class="popup popup-about">
+      <div class="content-block">
+        <p>About</p>
+        <p><a href="#" class="close-popup">Close popup</a></p>
+        <p>Lorem ipsum dolor ...</p>
+      </div>
+    </div> -->
+    <!-- Path to Framework7 Library JS-->
+    
+    <script type="text/javascript" src="bower_components/framework7/dist/js/framework7.min.js"></script>
+    <script src="assets/scripts/jquery.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="assets/scripts/config.js"></script>
+    <script type="text/javascript" src="assets/scripts/app.js"></script>
+    <script type="text/javascript" src="assets/scripts/api.js"></script>
+    <script type="text/javascript" src="assets/scripts/notification.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery.seat-charts.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery.md5.js"></script>
+
+  </body>
+</html>              
